@@ -12,8 +12,11 @@ var config = {
   ],
   output: {
     path: path.resolve(__dirname, 'dist'),
-    // publicPath: 'http://mycdn.com/', // This is used to generate URLs to e.g. images
+    publicPath: '/', // This is used to generate URLs to e.g. images
     filename: 'bundle.js'
+  },
+  devServer: {
+    historyApiFallback: true
   },
   module: {
     loaders: [
@@ -26,15 +29,11 @@ var config = {
         }
       },
       { test: /\.css$/, loader: 'style-loader!css-loader!' },
+      // { test: /\.html$/, loader: 'file-loader' },
       { test: /\.(png|jpg)$/, loader: 'url-loader?limit=8192' }
     ],
-    // noParse: [pathReact]
   },
   resolve: {
-    // alias: {
-    //     'react': pathReact,
-    //     'react-dom': pathReactDOM
-    // },
     extensions: ['', '.js', 'jsx', '.json']
   },
   // plugins: [new HtmlWebpackPlugin()]

@@ -1,6 +1,13 @@
 import './css/style.css';
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import HelloReact from './components/hello';
+import { Router } from 'react-router';
+import createBrowserHistory from 'history/lib/createBrowserHistory';
+import routes from './routes.js';
 
-ReactDOM.render(<HelloReact name="fatwin" />, document.getElementById('app'));
+const history = createBrowserHistory();
+
+ReactDOM.render(
+  <Router history={history} routes={routes} />,
+  document.getElementById('app')
+);
