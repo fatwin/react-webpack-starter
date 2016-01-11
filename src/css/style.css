@@ -1,3 +1,42 @@
+html {
+    font-size: 20px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 body {
-    background: darkseagreen;
+    background: #EBEAEC;
+    font-size: 1rem;
+    margin: 0rem;
+}
+
+header {
+    background-color: #00B4F3;
+    display: inline-block;
+    height: 30px;
+    padding: 5px 0px 5px 0px;
+    position: relative;
+    width: 100%;
+}
+
+header .header-home-logo {
+    display: inline-block;
+    margin-left: 0.2rem;
+    position: absolute;
+    width: 3rem;
+}
+
+header .header-home-search {
+    background-color: #FFF;
+    border-radius: 0.5rem;
+    display: inline-block;
+    margin-left: 3.5rem;
+    position: relative;
+    width: auto;
+}
+
+header .header-home-user {
+    display: inline-block;
+    margin-right: 0.2rem;
+    position: absolute;
+    right: 0.5rem;
 }
