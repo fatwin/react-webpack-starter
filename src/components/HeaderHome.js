@@ -6,7 +6,9 @@ export default class HeaderHome extends React.Component {
   render() {
     return (
       <header>
-        <span className="header-home-logo">范PIN</span>
+        <div className="header-home-logo">
+          <span>范PIN</span>
+        </div>
         <SearchBox />
         <User />
       </header>

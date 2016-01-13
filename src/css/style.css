@@ -1,3 +1,9 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 html {
     font-size: 20px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -5,38 +11,68 @@ html {
 
 body {
     background: #EBEAEC;
+    color: #666;
     font-size: 1rem;
     margin: 0rem;
 }
 
 header {
     background-color: #00B4F3;
+    color: #EBEAEC;
     display: inline-block;
-    height: 30px;
-    padding: 5px 0px 5px 0px;
+    font-size: 0.8rem;
+    height: 2.5rem;
+    padding: 5px 0 5px 0;
     position: relative;
     width: 100%;
 }
 
+header a {
+    color: #EBEAEC;
+    text-decoration: none;
+}
+
 header .header-home-logo {
     display: inline-block;
-    margin-left: 0.2rem;
-    position: absolute;
-    width: 3rem;
+    line-height: 40px;
+    text-align: center;
+    width: 15%;
 }
 
 header .header-home-search {
-    background-color: #FFF;
-    border-radius: 0.5rem;
+    background-color: #48BBF3;
+    border-radius: 0.8rem;
     display: inline-block;
-    margin-left: 3.5rem;
-    position: relative;
-    width: auto;
+    font-size: 0.6rem;
+    line-height: 30px;
+    padding-left: 1rem;
+    width: 70%;
 }
 
 header .header-home-user {
     display: inline-block;
-    margin-right: 0.2rem;
-    position: absolute;
-    right: 0.5rem;
+    text-align: center;
+    right: 0;
+    width: 15%
+}
+
+nav a {
+    color: #666;
+    text-decoration: none;
+}
+
+nav ul {
+    margin: 0;
+    padding-left: 10%;
+}
+nav li {
+    display: inline-block;
+    font-size: 0.6rem;
+    text-align: center;
+    width: 22%;
+}
+
+.search-box {
+    display: block;
+    width: 100%;
 }
