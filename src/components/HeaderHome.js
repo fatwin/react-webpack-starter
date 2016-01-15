@@ -9,7 +9,7 @@ export default class HeaderHome extends React.Component {
         <div className="header-home-logo">
           <span>范PIN</span>
         </div>
-        <SearchBox />
+        <SearchBox placeHolder="搜索产品 / 体验店" />
         <User />
       </header>
     );

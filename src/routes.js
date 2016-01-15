@@ -13,7 +13,6 @@ export default (
     <IndexRoute component={Home} />
     <Route path="user" component={User} />
     <Route path="search" component={Search} />
-    {/*<Route path="hello" component={Hello} />*/}
     <Route path="*" component={NoMatch}/>
   </Route>
 );

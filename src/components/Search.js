@@ -4,7 +4,10 @@ export default class Search extends React.Component {
   render() {
     return (
       <div className="search">
-        <span>搜索页</span>
+        <span>X</span>
+        <form>
+          <input type="text" />
+        </form>
       </div>
     );
   }
