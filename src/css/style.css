@@ -10,15 +10,15 @@ html {
 }
 
 body {
-    background: #EBEAEC;
+    background: #ebeaec;
     color: #666;
     font-size: 1rem;
     margin: 0rem;
 }
 
 header {
-    background-color: #00B4F3;
-    color: #EBEAEC;
+    background-color: #00b4f3;
+    color: #ebeaec;
     display: inline-block;
     font-size: 0.8rem;
     height: 2.5rem;
@@ -28,30 +28,35 @@ header {
 }
 
 header a {
-    color: #EBEAEC;
+    color: #ebeaec;
     text-decoration: none;
 }
 
-header .header-home-logo {
+header svg {
+    fill: #fff;
+}
+
+header > div {
     display: inline-block;
-    line-height: 40px;
+    vertical-align: middle;    
+}
+
+.home-logo {
+    line-height: 2rem;
     text-align: center;
     width: 18%;
 }
 
-header .header-home-search {
-    background-color: #48BBF3;
+.home-search {
+    background-color: #48bbf3;
     border-radius: 0.8rem;
-    display: inline-block;
     font-size: 0.6rem;
     line-height: 1.5rem;
     width: 70%;
 }
 
-header .header-home-user {
-    display: inline-block;
+.home-user {
     text-align: center;
-    vertical-align: middle;
     width: 12%
 }
 
@@ -64,6 +69,7 @@ nav ul {
     margin: 0;
     padding-left: 10%;
 }
+
 nav li {
     display: inline-block;
     font-size: 0.7em;
@@ -77,22 +83,57 @@ nav li {
     width: 100%;
 }
 
+.search {
+    background: #f1f1f1;
+    height: 2.25rem;
+    text-align: center;
+}
+
+.search > * {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.search svg {
+    fill: currentColor;
+}
+
+.nav-back {
+    margin-left: 2%;
+    text-align: center;
+    width: 12%;
+}
+
+.search-form {
+    height: 2rem;
+    width: 80%;
+    line-height: 2rem;
+}
+
+.search-input {
+    border: none;
+    border-radius: 0.75rem;
+    display: inline-block;
+    padding: 0 0 0 0;
+    height: 1.5rem;
+    width: 90%;
+    line-height: 2rem;
+    font-size: 0.8rem;
+    vertical-align: middle;
+}
+
 .icon {
     display: inline-block;
     width: 1rem;
     height: 1rem;
+    line-height: 1rem;
+    vertical-align: middle;
 }
 
 .icon-search {
-    display: inline-block;
-    position: absolute;
-    margin: 0.45rem;
+    /*position: absolute;*/
+    /*margin: 0.45rem;*/
     width: 0.7rem;
     height: 0.7rem;
-}
-
-.icon-login {
-    display: inline-block;
-    width: 1rem;
-    height: 1rem;
+    line-height: 0.7rem;
 }

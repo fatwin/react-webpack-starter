@@ -6,7 +6,7 @@ export default class HeaderNavBack extends React.Component {
   render() {
     return (
       <header>
-        <div className="header-home-logo">
+        <div className="home-logo">
           <span>范PIN</span>
         </div>
         <SearchBox />
