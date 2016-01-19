@@ -6,22 +6,34 @@ import searchSVG from './../img/search.svg';
 import history from './../history';
 
 export default class Search extends React.Component {
-  // Use arrow function instead
-  // handleClick() {
-  //   history.goBack(); 
-  // } 
- 
+  constructor () {
+    super();
+    this.state = { searchResult: 'no result' };
+  }
+  
+  componentDidMount () {
+    this.refs.searchInput.focus();
+  }
+  
+  handleChange(e) {
+    this.setState({ searchResult:e.target.value });
+  }
+  
   render() {
     return (
       <div className="search">
         <div className="nav-back" onClick={() => history.goBack()}>
-          <IconSVG iconFile={navBackSVG} className="icon" />
+          <IconSVG iconFile={navBackSVG} />
         </div>
         <div className="search-form">
           <form>
-            <input type="text" className="search-input" />
-            <IconSVG iconFile={searchSVG} />
+            <input type="text" className="search-input"  ref="searchInput"
+                onChange={this.handleChange.bind(this)} />
+            <IconSVG iconFile={searchSVG} className="icon icon-search" />
           </form>
+        </div>
+        <div>
+          {this.state.searchResult}
         </div>
       </div>
     );
