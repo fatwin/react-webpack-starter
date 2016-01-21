@@ -1,16 +1,16 @@
 import * as React from 'react';
-import { Link } from 'react-router';
-import createHistory from 'history/lib/createBrowserHistory';
-
-var history = createHistory();
+import IconSVG from './IconSVG';
+import searchSVG from './../img/search.svg';
+import history from './../history';
 
 export default class SearchBox extends React.Component {
   render() {
     return (
-      <div className="header-home-search">
-        <Link to="search" className="search-box">
-          <span>搜索产品 / 体验店</span>
-        </Link>
+      <div className="home-search" onClick={() => history.pushState(null, 'search')}>
+        <IconSVG iconFile={searchSVG} className="icon icon-search-box" />
+        <div className="search-box">
+          <span>{this.props.placeHolder}</span>
+        </div>
       </div>
     );
   }

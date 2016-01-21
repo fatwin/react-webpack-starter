@@ -1,10 +1,12 @@
 import * as React from 'react';
+import IconSVG from './IconSVG';
+import loginSVG from './../img/login.svg';
 
 export default class User extends React.Component {
   render() {
     return (
-      <div className="header-home-user">
-        <span>登录</span>
+      <div className="home-user">
+        <IconSVG iconFile={loginSVG} className="icon" />
       </div>
     );
   }
