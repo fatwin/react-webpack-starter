@@ -43,7 +43,7 @@ var config = {
         test: /\.svg$/,
         loader: 'svg-sprite',
         query: {
-          name: '[name]_[hash:8].[ext]',
+          name: '[name]_[hash:6].[ext]',
           prefixize: true
         } 
       }, // Or raw-loader?
