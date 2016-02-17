@@ -14,4 +14,4 @@ export default (
     <Route path="search" component={Search} />
     <Route path="*" component={NoMatch}/>
   </Route>
-);
+); 

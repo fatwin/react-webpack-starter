@@ -1,9 +1,8 @@
 import * as React from 'react';
-import { Link } from 'react-router';
+import { Link, browserHistory } from 'react-router';
 import IconSVG from './IconSVG';
 import navBackSVG from './../img/nav-back.svg';
 import searchSVG from './../img/search.svg';
-import history from './../history';
 
 export default class Search extends React.Component {
   constructor () {
@@ -22,7 +21,7 @@ export default class Search extends React.Component {
   render() {
     return (
       <div className="search">
-        <div className="nav-back" onClick={() => history.goBack()}>
+        <div className="nav-back" onClick={() => browserHistory.goBack()}>
           <IconSVG iconFile={navBackSVG} />
         </div>
         <div className="search-form">

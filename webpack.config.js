@@ -10,9 +10,9 @@ var devServerPort = 8080;
 
 var config = {
   entry: [
-  // 'webpack/hot/dev-server', // Auto reloads the entire page after the HMR update fails, use with --hot in webpack CLI
-    'webpack/hot/only-dev-server', // Do not auto reload when syntax error occurs
     'webpack-dev-server/client?http://' + devServerHost + ':' + devServerPort,
+    // 'webpack/hot/dev-server', // Auto reloads the entire page after the HMR update fails, use with --hot in webpack CLI
+    'webpack/hot/only-dev-server', // Do not auto reload when syntax error occurs
     // Indicate that it's inline mode，equivalent to use --inline in webpack CLI
     path.resolve(__dirname, 'src/main.js')
   ],
@@ -39,13 +39,13 @@ var config = {
       },
       { test: /\.css$/, loaders: ['style', 'css'] },
       { test: /\.(png|jpe?g)$/, loader: 'url?name=[name]_[hash:6].[ext]&limit=8192' },
-      { 
+      {
         test: /\.svg$/,
         loader: 'svg-sprite',
         query: {
           name: '[name]_[hash:6].[ext]',
           prefixize: true
-        } 
+        }
       }, // Or raw-loader?
       // { test: path.resolve(node_modules, pathReact), loader: 'expose?React' },
       // { test: path.resolve(node_modules, pathReactDOM), loader: 'expose?ReactDOM' }
